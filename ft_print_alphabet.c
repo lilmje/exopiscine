@@ -1,28 +1,28 @@
-#include<unistd.h>
-#include<stdio.h>
+#include <unistd.h>
+#include <stdio.h>
 
 int ft_putchar(char c)
 {
 	write(1, &c, 1);
-	return(c);
+	return(0);
 }
 
-void print_alphabet(void)
+void ft_print_alphabet(void)
 {
 	char lettre;
 	lettre = 'a';
-	while (lettre =='Z')
+	char espace = '\n';
+	while (lettre !='{')
 	{
 		ft_putchar(lettre);
 		lettre++;
 	}
-	return(lettre);
+	ft_putchar(espace);
 }
 
 int main(void)
 {
-	char lettre = 'a';
-	print_alphabet(lettre);
+	ft_print_alphabet();
 	return(0);
 }
 
