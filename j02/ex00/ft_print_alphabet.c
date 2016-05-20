@@ -20,7 +20,7 @@ void ft_print_alphabet(void)
 	ft_putchar(espace);
 }
 
-int main(void)
+int		main(void)
 {
 	ft_print_alphabet();
 	return(0);
