@@ -19,7 +19,6 @@ void ft_is_negative(int n)
 	ft_putchar(espace);
 }
 
-
 int main(void)
 {
 	int n;
